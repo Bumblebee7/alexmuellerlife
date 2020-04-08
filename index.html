@@ -14,30 +14,30 @@
 </head>
 
 <body>
-    <!-- Navigation -->
+    <!-- Header -->
     <header>
-        <div class="header-container">
-            <h1>// Alexander Müller</h1>
-            <nav class="navigation-bar">
-                <a href="#about" class="navigation-item">My life</a> |
-                <a href="#blog" class="navigation-item">Blog</a> |
-                <a href="#Impressum" class="navigation-item">Impressum</a>
-            </nav>
-        </div>
-        <div class="social-container">
-            <a href="#"><i class="fa fa-linkedin"></i></a>
+        <h1>// Alexander Müller</h1>
+        <nav>
+            <a href="#about" class="navigation-item">My life</a> |
+            <a href="#blog" class="navigation-item">Blog</a> |
+            <a href="#Impressum" class="navigation-item">Impressum</a> |
+            <a href="#"><i class="fa fa-linkedin"></i></a> |
             <a href="#"><i class="fa fa-envelope"></i></a>
-        </div>
+        </nav>
     </header>
-    <section class="title-section">
-        <img class="title-picture" src="pictures/code.jpg" alt="Picture of code editor"/>
-    </section>
-    
-    <main class="main-container">
+
+    <!-- Main -->
+    <main>
+        
+        <!-- Title picture -->
+        <section class="title-section">
+            <img class="title-picture" src="pictures/code.jpg" alt="Picture of code editor"/>
+        </section>
+        
         <!-- About -->
-        <h2>// My life in a nutshell</h1>
-        <section class="about">
-            <div id="about">
+        <h2 id="about">// My life in a nutshell</h1>
+        <section class="about" >
+            <div>
                 <p>I am a technical consultant by profession and have a passion for creating web applications in an international team. In addition, I'm a Masters student in distance learning program. </p>
                 <ol>
                     <li></li>
@@ -67,9 +67,10 @@
             </div>
         </section>
     
-        <h2>// Blog</h1>
-        <section class="blog" id="blog">
-            <p>I write about tech, education, democracy, and culture.
+        <!-- Blog -->
+        <h2 id="blog">// Blog</h2>
+        <section class="blog">
+            <p>I write about tech, gaming, my side projects and my life in general.
                 Here are three of my most recent posts:</p>
                 <div class="posts">
                     <div class="post">
@@ -85,6 +86,7 @@
         </section>
         
     </main>
+
     <!-- Footer -->
     <footer class="footer-bar">
         <p>Made with <i class="fa fa-heart"></i> in Germany</p>
