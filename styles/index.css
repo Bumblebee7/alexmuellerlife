@@ -1,16 +1,28 @@
 * {
     font-family: 'Courier New', Courier, monospace;
+    margin-left: 0px;
+    margin-right: 0px;
 }
+
+
+/*
+* Header
+*/
 
 header {
     position: fixed;
-    top: 0;
+    top: 0px;
+    left: 0px;
     width: 100%;
     
     padding-left: 10px;
     padding-bottom: 10px;
-
+    
     background-color: lime;
+}
+
+header + main {
+    padding-top: 99px
 }
 
 header a {
@@ -23,14 +35,36 @@ header a:hover {
     font-weight: bold;
 }
 
+
+/*
+* Main
+*/
+
+main {
+    margin-top: 0px;
+}
+
+main h2 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*
+* Main - Title picture
+*/
+
 .title-picture {
     width: 100%;
     vertical-align: middle;
 }
 
-footer {
-    text-align: center;
-}
+/*
+* Main - About
+*/
 
 .about {
     display: grid;
@@ -51,18 +85,12 @@ footer {
     list-style-type: none;
 }
 
-.bold-code {
-    font-weight: bold;
-}
 
-h2 {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
-main {
-    margin-top: 0px;
+/*
+* Footer
+*/
+
+footer {
+    text-align: center;
 }
