@@ -61,12 +61,3 @@ h2 {
 .main-container {
     margin-top: 0px;
 }
-
-.posts {
-    display: grid;
-    grid-template-columns: auto auto auto;
-=======
-* {
-    font-family: 'Courier New', Courier, monospace;
->>>>>>> da3b76283287186f318e6b761044ea928334f7b1
-}
