@@ -85,7 +85,29 @@ main h2 {
     list-style-type: none;
 }
 
+.prosa {
+    margin-left: 10px;
+}
 
+
+/*
+* Main - Blog
+*/
+
+.blog p {
+    margin-left: 10px;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    padding: 10px;
+}
+
+.post {
+    margin: 10px;
+    padding: 10px;
+}
 
 /*
 * Footer
