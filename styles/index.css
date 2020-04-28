@@ -31,13 +31,6 @@ nav a:hover {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 20%;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.about {
-    padding: 10%;
 }
 
 .about-wrapper {
@@ -47,7 +40,7 @@ nav a:hover {
 }
 
 .about-wrapper div {
-    padding: 10%;
+    padding: 15%;
 }
 
 img {
@@ -57,6 +50,11 @@ img {
 .blog {
     background-color: black;
     color: white;
+    padding: 0.5rem;
+}
+
+.blog h2 {
+    text-align: center;
 }
 
 .posts {
@@ -66,7 +64,16 @@ img {
 }
 
 .post {
-    padding: 5%;
+    padding: 10%;
+}
+
+.post h3 {
+    text-align: center;
+}
+
+.post img {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer {
