@@ -8,7 +8,7 @@
 */
 
 header {
-   background-color: white;
+    background-color: white;
 }
 
 nav {
@@ -32,7 +32,6 @@ nav a:hover {
     text-align: center;
 }
 
-
 .about {
     background-color: black;
     color: white;
@@ -53,7 +52,7 @@ img {
 }
 
 .projects {
-    padding: 0.5rem;
+    padding: 10% 0.5rem;
 }
 
 .projects h2 {
@@ -90,9 +89,18 @@ img {
     padding-bottom: 10px;
 }
 
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
 footer {
     background-color: black;
     color: white;
     padding: 0.5rem;
     text-align: center;
+}
+
+.heart {
+    color: red;
 }
