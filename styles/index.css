@@ -1,106 +1,116 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0rem 0rem;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0rem 0rem;
 }
 
 /*
 * Header
 */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 
 header {
-    background-color: white;
+  background-color: white;
 }
 
 nav {
-    padding: 1rem 1rem;
-    background-color: rgba(255, 255, 255, 0);
+  padding: 1rem 1rem;
+  background-color: lawngreen;
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 nav a:hover {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.fullsize {
+  height: 100%;
 }
 
 .hero-section {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    padding: 20%;
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  position: relative;
+  top: 50%;
+  text-align: center;
 }
 
 .about {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .about-wrapper {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .about-wrapper div {
-    padding: 15%;
+  padding: 15%;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .projects {
-    padding: 10% 0.5rem;
+  padding: 10% 0.5rem;
 }
 
 .projects h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .posts {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .post {
-    padding: 10%;
+  padding: 10%;
 }
 
 .post h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .post img {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .contact {
-    background-color: black;
-    color: white;
-    padding: 10%;
-    text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10%;
+  text-align: center;
 }
 
 .contact h2 {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .contact a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 footer {
-    background-color: black;
-    color: white;
-    padding: 0.5rem;
-    text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .heart {
-    color: red;
+  color: red;
 }
