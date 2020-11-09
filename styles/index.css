@@ -3,18 +3,34 @@
   margin: 0rem 0rem;
 }
 
-/*
-* Header
-*/
 html,
 body {
   height: 100%;
   margin: 0;
 }
 
+/*
+* Header
+*/
 header {
   background-color: white;
 }
+
+.fullsize {
+  height: 100%;
+}
+
+.hero-section {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+
+/*
+* Navigation
+*/
 
 nav {
   padding: 1rem 1rem;
@@ -30,17 +46,19 @@ nav a:hover {
   font-weight: bold;
 }
 
-.fullsize {
-  height: 100%;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.hero-section {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  position: relative;
-  top: 50%;
-  text-align: center;
+.sticky + .content {
+  padding-top: 60px;
 }
+
+/*
+* Main
+*/
 
 .about {
   background-color: black;
@@ -103,6 +121,10 @@ img {
   text-decoration: none;
   color: white;
 }
+
+/*
+* Footer
+*/
 
 footer {
   background-color: black;
