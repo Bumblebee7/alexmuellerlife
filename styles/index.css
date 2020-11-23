@@ -61,22 +61,20 @@ nav a:hover {
 */
 
 .about {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   background-color: black;
   color: white;
 }
 
-.about-wrapper {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+.about div {
+  padding: 60px;
+  text-align: left;
 }
 
-.about-wrapper div {
-  padding: 15%;
-}
-
-img {
-  width: 100%;
+.about img {
+  max-width: 100%;
 }
 
 .projects {
