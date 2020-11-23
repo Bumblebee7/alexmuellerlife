@@ -80,6 +80,7 @@ img {
 }
 
 .projects {
+  text-align: center;
   padding: 10% 0.5rem;
 }
 
@@ -94,7 +95,7 @@ img {
 }
 
 .post {
-  padding: 10%;
+  padding: 5%;
 }
 
 .post h3 {
@@ -105,6 +106,10 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+/*
+* Footer
+*/
 
 .contact {
   background-color: black;
@@ -121,10 +126,6 @@ img {
   text-decoration: none;
   color: white;
 }
-
-/*
-* Footer
-*/
 
 footer {
   background-color: black;
