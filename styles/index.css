@@ -77,32 +77,23 @@ nav a:hover {
   max-width: 100%;
 }
 
-.projects {
+.skills {
   text-align: center;
-  padding: 10% 0.5rem;
+  padding: 10% 5%;
 }
 
-.projects h2 {
+.skills h2 {
   text-align: center;
 }
 
 .posts {
   display: grid;
-  align-items: center;
+  align-items: top;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.post {
+.posts div {
   padding: 5%;
-}
-
-.post h3 {
-  text-align: center;
-}
-
-.post img {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 /*
