@@ -141,7 +141,9 @@ button {
 }
 
 .posts div {
-  padding: 5%;
+  margin: 1%;
+  padding: 4%;
+  background-color: rgba(190, 190, 190, 0.2);
 }
 
 /*
