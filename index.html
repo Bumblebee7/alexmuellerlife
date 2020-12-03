@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alex Müller</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link href="styles/dark-theme.css" rel="stylesheet" id="theme-link" />
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
   </head>
 
-  <body>
+  <body class="dark-theme || light-theme">
     <header class="fullsize">
       <section class="hero-section">
         <h1>Alexander Müller</h1>
@@ -27,7 +28,10 @@
     <nav id="navbar">
       <a href="#about" class="navigation-item">About</a> |
       <a href="#skills" class="navigation-item">Skills</a> |
-      <a href="#contact" class="navigation-item">Contact</a>
+      <a href="#contact" class="navigation-item">Contact</a> |
+      <button class="btn-toggle">
+        <i class="fa fa-moon-o" aria-hidden="true"></i>
+      </button>
     </nav>
 
     <main>
@@ -35,7 +39,7 @@
       <section id="about" class="about">
         <img src="pictures/portrait.jpg" alt="A picture of me" />
         <div>
-          <h2>Hi, My Name Is Alex.</h2>
+          <h2>Hi, My Name is Alex.</h2>
           <p>
             I'm a dynamic software developer and love building minimalistic web
             applications through carefully crafted code and user-centric design.
@@ -119,6 +123,19 @@
           navbar.classList.remove("sticky");
         }
       }
+
+      const btn = document.querySelector(".btn-toggle");
+      const theme = document.querySelector("#theme-link");
+
+      btn.addEventListener("click", function () {
+        if (theme.getAttribute("href") == "styles/dark-theme.css") {
+          theme.href = "styles/light-theme.css";
+          btn.innerHTML = "<i class='fa fa-sun-o' aria-hidden='true'></i>";
+        } else {
+          theme.href = "styles/dark-theme.css";
+          btn.innerHTML = "<i class='fa fa-moon-o' aria-hidden='true'></i>";
+        }
+      });
     </script>
   </body>
 </html>
