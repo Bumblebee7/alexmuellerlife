@@ -87,11 +87,15 @@ nav a:hover {
 
 button {
   border: none;
-  background-color: lawngreen;
+  background-color: rgb(125, 250, 0);
   color: black;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(102, 201, 3);
 }
 
 .sticky {
