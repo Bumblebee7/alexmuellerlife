@@ -16,27 +16,31 @@
   </head>
 
   <body class="dark-theme || light-theme">
-    <header class="fullsize">
-      <button class="btn-toggle">Darkmode: ON</button>
-      <section class="hero-section">
+    <header class="header">
+      <button class="header__button">Darkmode: ON</button>
+      <section class="header__section">
         <h1>Alexander Müller</h1>
-        <div class="typewriter">
+        <div class="header__typewriter">
           <p>Software Developer</p>
         </div>
       </section>
     </header>
 
-    <nav id="navbar">
-      <a href="#about" class="navigation-item">About</a> |
-      <a href="#skills" class="navigation-item">Skills</a> |
-      <a href="#contact" class="navigation-item">Contact</a>
+    <nav class="navigation" id="navigation">
+      <a href="#about" class="navigation__item">About</a> |
+      <a href="#skills" class="navigation__item">Skills</a> |
+      <a href="#contact" class="navigation__item">Contact</a>
     </nav>
 
-    <main>
+    <main class="main">
       <!-- About -->
-      <section id="about" class="about">
-        <img src="./pictures/portrait.jpg" alt="A picture of me" />
-        <div>
+      <section class="main__about">
+        <img
+          class="main__image"
+          src="./pictures/portrait.jpg"
+          alt="A picture of me"
+        />
+        <div class="main__bio">
           <h2>Hi, My Name is Alex.</h2>
           <p>
             I'm a dynamic software developer and love building minimalistic web
@@ -53,22 +57,23 @@
       </section>
 
       <!-- Skills -->
-      <section id="skills" class="skills">
+      <section class="skills">
         <div>
           <h2>What I love to do</h2>
           <p>My preferred technologies are listed here.</p>
         </div>
         <div class="posts">
-          <div>
+          <div class="posts__post">
             <h3>Frontend</h3>
             <h4>Languages</h4>
             <p>HTML</p>
-            <p>CSS</p>
+            <p>CSS/SCSS</p>
             <p>JavaScript</p>
             <h4>Frameworks</h4>
             <p>React</p>
+            <p>Bootstrap</p>
           </div>
-          <div>
+          <div class="posts__post">
             <h3>Backend</h3>
             <h4>Languages</h4>
             <p>Java</p>
@@ -78,7 +83,7 @@
             <p>Node.js</p>
             <p>Express.js</p>
           </div>
-          <div>
+          <div class="posts__post">
             <h3>Databases</h3>
             <p>SQL Server</p>
             <p>MySQL</p>
@@ -88,21 +93,19 @@
       </section>
     </main>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-      <h2>Interested? Let's connect!</h2>
-      <a href="https://github.com/Bumblebee7"
-        ><i class="fa fa-github" aria-hidden="true"></i
-      ></a>
-      |
-      <a href="https://www.linkedin.com/in/cs-alexander-mueller/"
-        ><i class="fa fa-linkedin" aria-hidden="true"></i
-      ></a>
-    </section>
-
-    <footer>
+    <footer class="footer">
+      <section class="footer__contact">
+        <h2>Interested? Let's connect!</h2>
+        <a href="https://github.com/Bumblebee7"
+          ><i class="fa fa-github" aria-hidden="true"></i
+        ></a>
+        |
+        <a href="https://www.linkedin.com/in/cs-alexander-mueller/"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i
+        ></a>
+      </section>
       <p>
-        Made with <i class="heart"><i class="fa fa-heart"></i></i>
+        Made with <i class="footer__heart"><i class="fa fa-heart"></i></i>
       </p>
     </footer>
 
@@ -111,7 +114,7 @@
         stickNavbar();
       };
 
-      var navbar = document.getElementById("navbar");
+      var navbar = document.getElementById("navigation");
       var sticky = navbar.offsetTop;
 
       function stickNavbar() {
@@ -122,7 +125,7 @@
         }
       }
 
-      const btn = document.querySelector(".btn-toggle");
+      const btn = document.querySelector(".header__button");
       const theme = document.querySelector("#theme-link");
 
       btn.addEventListener("click", function () {
