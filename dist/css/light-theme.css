@@ -14,7 +14,7 @@ body {
   height: 100%;
 }
 
-.header__button {
+.header .header__button {
   border: none;
   background-color: #7cfc00;
   color: #000;
@@ -23,11 +23,11 @@ body {
   font-size: 16px;
 }
 
-.header__button:hover {
+.header .header__button:hover {
   background-color: #7cfc00;
 }
 
-.header__section {
+.header .header__section {
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
   position: relative;
@@ -35,11 +35,11 @@ body {
   text-align: center;
 }
 
-.header__typewriter {
+.header .header__typewriter {
   display: inline-block;
 }
 
-.header__typewriter p {
+.header .header__typewriter p {
   color: black;
   font-family: monospace;
   overflow: hidden;
