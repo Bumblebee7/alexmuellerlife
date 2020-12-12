@@ -83,12 +83,12 @@ body {
   padding: 1rem 1rem;
   background-color: $accent-color;
 
-  &__item {
+  #{&}__item {
     text-decoration: none;
     color: $secondary-color;
   }
 
-  &__item:hover {
+  #{&}__item:hover {
     font-weight: bold;
   }
 }
@@ -104,7 +104,7 @@ body {
 }
 
 .main {
-  &__about {
+  #{&}__about {
     @include repsonsiveGrid;
     background-color: $secondary-color;
     color: $primary-color;
@@ -145,7 +145,7 @@ body {
   padding: 0.5rem;
   text-align: center;
 
-  &__contact {
+  #{&}__contact {
     background-color: $secondary-color;
     color: $primary-color;
     padding: 10%;
@@ -161,7 +161,7 @@ body {
     }
   }
 
-  &__heart {
+  #{&}__heart {
     color: $heart-color;
   }
 }

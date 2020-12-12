@@ -14,7 +14,7 @@ body {
   height: 100%;
 }
 
-.header__button {
+.header .header__button {
   border: none;
   background-color: #7cfc00;
   color: #000;
@@ -23,11 +23,11 @@ body {
   font-size: 16px;
 }
 
-.header__button:hover {
+.header .header__button:hover {
   background-color: #7cfc00;
 }
 
-.header__section {
+.header .header__section {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   position: relative;
@@ -35,11 +35,11 @@ body {
   text-align: center;
 }
 
-.header__typewriter {
+.header .header__typewriter {
   display: inline-block;
 }
 
-.header__typewriter p {
+.header .header__typewriter p {
   color: #fff;
   font-family: monospace;
   overflow: hidden;
@@ -104,12 +104,12 @@ body {
   background-color: #7cfc00;
 }
 
-.navigation__item {
+.navigation .navigation__item {
   text-decoration: none;
   color: #000;
 }
 
-.navigation__item:hover {
+.navigation .navigation__item:hover {
   font-weight: bold;
 }
 
@@ -135,12 +135,12 @@ body {
   color: #fff;
 }
 
-.main__about div {
+.main .main__about div {
   padding: 60px;
   text-align: left;
 }
 
-.main__about img {
+.main .main__about img {
   max-width: 100%;
 }
 
@@ -178,22 +178,22 @@ body {
   text-align: center;
 }
 
-.footer__contact {
+.footer .footer__contact {
   color: #fff;
   padding: 10%;
   text-align: center;
 }
 
-.footer__contact h2 {
+.footer .footer__contact h2 {
   padding-bottom: 10px;
 }
 
-.footer__contact a {
+.footer .footer__contact a {
   text-decoration: none;
   color: #fff;
 }
 
-.footer__heart {
+.footer .footer__heart {
   color: #ff0000;
 }
 /*# sourceMappingURL=light-theme.css.map */
