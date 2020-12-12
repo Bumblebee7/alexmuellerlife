@@ -1,5 +1,11 @@
 @import "./variables";
 
+@mixin repsonsiveGrid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
 * {
   font-family: "Courier New", Courier, monospace;
   margin: 0rem 0rem;
@@ -99,9 +105,7 @@ body {
 
 .main {
   &__about {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    @include repsonsiveGrid;
     background-color: $secondary-color;
     color: $primary-color;
 
@@ -124,9 +128,7 @@ body {
     }
 
     .posts {
-      display: grid;
-      align-items: top;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      @include repsonsiveGrid;
 
       &__post {
         margin: 1%;
