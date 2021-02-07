@@ -1,0 +1,197 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0rem 0rem;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  background-color: #fff;
+  height: 100%;
+}
+
+.header .header__button {
+  border: none;
+  background-color: #7cfc00;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header .header__button:hover {
+  background-color: #7cfc00;
+}
+
+.header .header__section {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+
+.header .header__typewriter {
+  display: inline-block;
+}
+
+.header .header__typewriter p {
+  color: black;
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #7cfc00;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+          animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  /* The typing effect */
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  /* The typing effect */
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  /* The typewriter cursor effect */
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #7cfc00;
+  }
+}
+
+@keyframes blink-caret {
+  /* The typewriter cursor effect */
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #7cfc00;
+  }
+}
+
+.navigation {
+  padding: 1rem 1rem;
+  background-color: #7cfc00;
+}
+
+.navigation .navigation__item {
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation .navigation__item:hover {
+  font-weight: bold;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.main .main__about {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  background-color: #000;
+  color: #fff;
+}
+
+.main .main__about div {
+  padding: 60px;
+  text-align: left;
+}
+
+.main .main__about img {
+  max-width: 100%;
+}
+
+.main .skills {
+  text-align: center;
+  padding: 10% 5%;
+}
+
+.main .skills h2 {
+  text-align: center;
+}
+
+.main .skills .posts {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.main .skills .posts__post {
+  margin: 1%;
+  padding: 4%;
+  background-color: #bebebe33;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.footer .footer__contact {
+  background-color: #000;
+  color: #fff;
+  padding: 10%;
+  text-align: center;
+}
+
+.footer .footer__contact h2 {
+  padding-bottom: 10px;
+}
+
+.footer .footer__contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .footer__heart {
+  color: #ff0000;
+}
+/*# sourceMappingURL=light-theme.css.map */

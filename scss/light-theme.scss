@@ -1,0 +1,167 @@
+@import "./variables";
+
+@mixin repsonsiveGrid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+* {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0rem 0rem;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  background-color: $primary-color;
+  height: 100%;
+
+  #{&}__button {
+    border: none;
+    background-color: $accent-color;
+    color: $secondary-color;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+
+  #{&}__section {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $secondary-color;
+    position: relative;
+    top: 50%;
+    text-align: center;
+  }
+
+  #{&}__typewriter {
+    display: inline-block;
+
+    p {
+      color: black;
+      font-family: monospace;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: 0.15em solid $accent-color; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: 0.15em; /* Adjust as needed */
+      animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+    }
+  }
+
+  @keyframes typing {
+    /* The typing effect */
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    /* The typewriter cursor effect */
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: $accent-color;
+    }
+  }
+}
+
+.navigation {
+  padding: 1rem 1rem;
+  background-color: $accent-color;
+
+  #{&}__item {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+
+  #{&}__item:hover {
+    font-weight: bold;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  + .content {
+    padding-top: 60px;
+  }
+}
+
+.main {
+  #{&}__about {
+    @include repsonsiveGrid;
+    background-color: $secondary-color;
+    color: $primary-color;
+
+    div {
+      padding: 60px;
+      text-align: left;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .skills {
+    text-align: center;
+    padding: 10% 5%;
+
+    h2 {
+      text-align: center;
+    }
+
+    .posts {
+      @include repsonsiveGrid;
+
+      &__post {
+        margin: 1%;
+        padding: 4%;
+        background-color: $posts-background-color;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: 0.5rem;
+  text-align: center;
+
+  #{&}__contact {
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 10%;
+    text-align: center;
+
+    h2 {
+      padding-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $primary-color;
+    }
+  }
+
+  #{&}__heart {
+    color: $heart-color;
+  }
+}
